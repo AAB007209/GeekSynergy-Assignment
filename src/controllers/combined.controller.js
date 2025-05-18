@@ -21,7 +21,7 @@ export const handleCreateEmployee = async (req, res) => {
             return res.status(500).json({ error: "Employee model not available." });
         }
 
-        const saved = await Employee.create(req.body);
+        const saved = await createEmployee(Employee, req.body);
         res.status(201).json(saved);
     } catch (error) {
         res.status(400).json({ error: "Failed to create employee", message: error.message });

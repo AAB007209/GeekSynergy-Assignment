@@ -8,7 +8,6 @@ export const getCombinedData = async (Employee, Product) => {
 
 export const createEmployee = async (Employee, employeeData) => {
     const newEmployee = new Employee(employeeData);
-    console.log(newEmployee);
     return await newEmployee.save();
 };
 
