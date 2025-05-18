@@ -17,9 +17,10 @@ This Node.js + Express backend application connects to two separate MongoDB data
 │   │   └── Product.model.js       # Defines and exports Product model
 │   ├── routes
 │   │   └── combined.route.js      # Combined route for both models
-│   └── controllers
-│       ├── employee.controller.js # Employee-related logic
-│       └── product.controller.js  # Product-related logic
+│   |── controllers
+│   |   ├── combined.controller.js # Employee-Product-related logic
+│   └── services
+│       └── combined.service.js    # Business logic for handling combined operations
 ```
 
 ## 💡 What This Assignment Demonstrates
